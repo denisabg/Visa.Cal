@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visa.Cal.Abstraction", "Visa.Cal.Abstraction\Visa.Cal.Abstraction.csproj", "{01577E34-1091-41CA-8B14-126FB91D154D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visa.Cal.Data", "Visa.Cal.Data\Visa.Cal.Data.csproj", "{CE55118C-FE1B-4616-84B1-E5A6E322403D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visa.Cal.Data.Tests", "Visa.Cal.Data.Tests\Visa.Cal.Data.Tests.csproj", "{F6189DB9-D9CB-4D12-A836-12FA854C2FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visa.Cal.Api", "Visa.Cal.Api\Visa.Cal.Api.csproj", "{F6D479DF-4612-4204-8014-10BF7F4B3A19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01577E34-1091-41CA-8B14-126FB91D154D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01577E34-1091-41CA-8B14-126FB91D154D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01577E34-1091-41CA-8B14-126FB91D154D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01577E34-1091-41CA-8B14-126FB91D154D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE55118C-FE1B-4616-84B1-E5A6E322403D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE55118C-FE1B-4616-84B1-E5A6E322403D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE55118C-FE1B-4616-84B1-E5A6E322403D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE55118C-FE1B-4616-84B1-E5A6E322403D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6189DB9-D9CB-4D12-A836-12FA854C2FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6189DB9-D9CB-4D12-A836-12FA854C2FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6189DB9-D9CB-4D12-A836-12FA854C2FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6189DB9-D9CB-4D12-A836-12FA854C2FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D479DF-4612-4204-8014-10BF7F4B3A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D479DF-4612-4204-8014-10BF7F4B3A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D479DF-4612-4204-8014-10BF7F4B3A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D479DF-4612-4204-8014-10BF7F4B3A19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
