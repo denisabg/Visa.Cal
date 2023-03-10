@@ -10,7 +10,7 @@ public class RepositoryTests
     [Fact]
     public async Task AddItemTest()
     {
-        var item = new SystemPortfolio()
+        var item = new SystemPortfolio
         {
             Name = "Xxxxxxxxxxxx",
             SystemType = "Web",
@@ -24,7 +24,7 @@ public class RepositoryTests
         Assert.True(item.Id > 0);
     }
 
-    private ProfileContext CreateContext()
+    private static ProfileContext CreateContext()
     {
         var instance = ProfileContext.Create(ConnectionString);
         

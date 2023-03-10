@@ -25,8 +25,8 @@ public class SystemProfileController : ControllerBase
         _logger.LogTrace("Get");
         if (name == null)
         {
-            return 
-                await _repository.FetchAsync(x => x.Id>=0, cancellationToken);
+            return
+                await _repository.FetchAsync(x => x.Id >= 0, cancellationToken);
         }
         
         return 

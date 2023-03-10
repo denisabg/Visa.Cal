@@ -7,23 +7,22 @@ public class ProfileContext : DbContext
 {
     public ProfileContext() : base()
     {
-
     }
 
-    public ProfileContext(DbContextOptions options) : base(options)
+    public ProfileContext(DbContextOptions options) : base(options: options)
     {
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        base.OnConfiguring(optionsBuilder);
+        base.OnConfiguring(optionsBuilder: optionsBuilder);
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         var entity = modelBuilder.Entity<SystemPortfolio>();
-        entity.HasIndex(x => x.Name);
-        entity.HasKey(x=>x.Id);
+        entity.HasIndex(indexExpression: x => x.Name);
+        entity.HasKey(keyExpression: x=>x.Id);
     }
 
 
@@ -32,9 +31,9 @@ public class ProfileContext : DbContext
         connectionString ??= $"name={nameof(ProfileContext)}";
         
         var builder = new DbContextOptionsBuilder<ProfileContext>()
-            .UseSqlServer(connectionString);
+            .UseSqlServer(connectionString: connectionString);
         
-        var instance = new ProfileContext(builder.Options);
+        var instance = new ProfileContext(options: builder.Options);
 
         return instance;
     }

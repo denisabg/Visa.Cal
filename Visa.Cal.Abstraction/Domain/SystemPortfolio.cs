@@ -3,8 +3,8 @@
 public class SystemPortfolio : IHasId
 {
     public int Id { get; set; }
-    public string Name { get; set; }
-    public string SystemType { get; set; }
-    public string TechnologyType { get; set; }
+    public string Name { get; set; } = null!;
+    public string SystemType { get; set; } = null!;
+    public string TechnologyType { get; set; } = null!;
     
 }
