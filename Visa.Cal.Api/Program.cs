@@ -2,10 +2,7 @@ using Visa.Cal.Abstraction.Data;
 using Visa.Cal.Abstraction.Domain;
 using Visa.Cal.Data;
 
-//const string connectionString = "Server=127.0.0.1\\mssqllocldb,1433;Database=ProfileContextTest;User=sa;Password=Abgo!Den!1977";
-
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("ProfileContext");
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -17,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IRepositoryGeneric<SystemPortfolio>, RepositoryGeneric<SystemPortfolio>>
     ( _ =>
         {
+            var connectionString = builder.Configuration.GetConnectionString("ProfileContext");
             var dbContext = ProfileContext.Create(connectionString);
             dbContext.Database.EnsureCreated();
             return new RepositoryGeneric<SystemPortfolio>(dbContext);

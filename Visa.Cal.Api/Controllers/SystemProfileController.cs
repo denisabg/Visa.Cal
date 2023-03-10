@@ -2,7 +2,7 @@
 using Visa.Cal.Abstraction.Data;
 using Visa.Cal.Abstraction.Domain;
 
-namespace Visa.Cal.Controllers;
+namespace Visa.Cal.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
