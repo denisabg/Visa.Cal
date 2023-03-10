@@ -6,7 +6,7 @@ namespace Visa.Cal.Data.Tests;
 
 public class RepositoryTests
 {
-    private const string ConnectionString = @"Server=127.0.0.1\mssqllocldb,1433;Database=ProfileContextTest;User=sa;Password=MyPass@word";
+    private const string ConnectionString = @"Server=127.0.0.1\mssqllocldb,1433;Database=ProfileContextTest;User=sa;Password=Abgo!Den!1977";
     [Fact]
     public async Task AddItemTest()
     {
